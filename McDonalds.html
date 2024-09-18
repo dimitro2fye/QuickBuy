@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McDonald's Clone</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+        }
+
+        header {
+            background-color: #da291c;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        header img {
+            width: 150px;
+        }
+
+        /* Home Button Styling */
+        .home-button {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            background-color: #f1c40f;
+            color: #333;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            z-index: 1000; /* Make sure it's above other elements */
+        }
+
+        .home-button:hover {
+            background-color: #f39c12;
+        }
+
+        .nav {
+            text-align: center;
+            background-color: #fff;
+            padding: 10px 0;
+            border-bottom: 2px solid #da291c;
+        }
+
+        .nav a {
+            color: #da291c;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .nav a:hover {
+            background-color: #f1c40f;
+            color: #fff;
+        }
+
+        .hero {
+            background: url('https://example.com/your-hero-image.jpg') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .content {
+            text-align: center;
+            margin: 40px;
+        }
+
+        .content h2 {
+            color: #da291c;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .content img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 18px;
+            color: #333;
+            line-height: 1.6;
+            margin: 0 20px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #da291c;
+            color: white;
+            font-size: 18px;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #c8102e;
+        }
+
+        /* Additional Styles for Sections */
+        .section {
+            padding: 40px 20px;
+            background-color: #fff;
+            border-bottom: 2px solid #da291c;
+            position: relative;
+        }
+
+        .section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .section-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Orange Order Now Button */
+        .order-button {
+            display: inline-block;
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #f39c12;
+            color: white;
+            font-size: 18px;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+            margin-left: 20px; /* Add spacing between buttons */
+        }
+
+        .order-button:hover {
+            background-color: #e67e22;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Home Button -->
+    <a href="FIRST PAGE.html" class="home-button">Home</a>
+    
+    <header>
+        <img src="https://example.com/your-logo.jpg" alt="McDonald's Logo">
+    </header>
+
+    <div class="nav">
+        <a href="#menu">Menu</a>
+        <a href="#deals">Deals</a>
+        <a href="#locations">Locations</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <div class="hero">
+        <h1>Welcome to McDonald's</h1>
+    </div>
+
+    <div id="menu" class="section">
+        <div class="section-content">
+            <h2>Our Menu</h2>
+            <img src="https://example.com/menu-image.jpg" alt="Menu">
+            <p>Discover our delicious menu items, from burgers and fries to desserts and drinks. Check out our full menu and find your favorite meal.</p>
+            <a href="menu.html" class="cta-button">View Menu</a>
+        </div>
+    </div>
+
+    <div id="deals" class="section">
+        <div class="section-content">
+            <h2>Special Deals</h2>
+            <img src="https://example.com/deals-image.jpg" alt="Deals">
+            <p>Don't miss out on our special deals and offers. Enjoy great savings on your favorite meals with our latest promotions.</p>
+            <a href="deals.html" class="cta-button">See Deals</a>
+        </div>
+    </div>
+
+    <div id="locations" class="section">
+        <div class="section-content">
+            <h2>Find Us</h2>
+            <img src="https://example.com/locations-image.jpg" alt="Locations">
+            <p>Locate our restaurants near you. Use our store locator to find McDonald's locations and get directions to your nearest restaurant.</p>
+            <a href="locations.html" class="cta-button">Find Locations</a>
+        </div>
+    </div>
+
+    <div id="contact" class="section">
+        <div class="section-content">
+            <h2>Contact Us</h2>
+            <img src="https://example.com/contact-image.jpg" alt="Contact">
+            <p>Have questions or feedback? Reach out to us via our contact form or call our customer service. We're here to help!</p>
+            <a href="contact.html" class="cta-button">Contact Us</a>
+            <!-- Order Now Button -->
+            <a href="order.html" class="order-button">Order Now</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 McDonald's. All rights reserved.</p>
+    </div>
+</body>
+</html>

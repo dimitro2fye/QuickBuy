@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger King</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #f9c930;
+            padding: 10px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        header img {
+            width: 150px;
+        }
+
+        .home-button {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            background-color: #d00027;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .home-button:hover {
+            background-color: #b00023;
+        }
+
+        .nav {
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 18px;
+        }
+
+        .nav a:hover {
+            background-color: #f9c930;
+        }
+
+        .hero {
+            background: url('https://via.placeholder.com/1600x500?text=Burger+King+Hero+Image') no-repeat center center/cover;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .section img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            color: #d00027;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .section p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 0 20px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #d00027;
+            color: white;
+            font-size: 18px;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #b00023;
+        }
+
+        .footer {
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="FIRST PAGE.html" class="home-button">Home</a>
+        <img src="https://via.placeholder.com/150x50?text=Burger+King+Logo" alt="Burger King Logo">
+    </header>
+
+    <div class="nav">
+        <a href="#menu">Menu</a>
+        <a href="#deals">Deals</a>
+        <a href="#locations">Locations</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <div class="hero">
+        <h1>Welcome to Burger King</h1>
+    </div>
+
+    <div id="menu" class="section">
+        <h2>Our Menu</h2>
+        <img src="https://via.placeholder.com/600x300?text=Delicious+Menu+Items" alt="Menu">
+        <p>Explore our delicious menu with burgers, fries, and more. Find your favorite meal and enjoy a tasty experience.</p>
+        <a href="menu.html" class="cta-button">View Menu</a>
+    </div>
+
+    <div id="deals" class="section">
+        <h2>Special Deals</h2>
+        <img src="https://via.placeholder.com/600x300?text=Special+Deals" alt="Deals">
+        <p>Check out our latest deals and promotions. Enjoy great savings on your favorite items with our special offers.</p>
+        <a href="deals.html" class="cta-button">See Deals</a>
+    </div>
+
+    <div id="locations" class="section">
+        <h2>Find Us</h2>
+        <img src="https://via.placeholder.com/600x300?text=Find+Our+Locations" alt="Locations">
+        <p>Locate our restaurants near you. Use our store locator to find the nearest Burger King location.</p>
+        <a href="locations.html" class="cta-button">Find Locations</a>
+    </div>
+
+    <div id="contact" class="section">
+        <h2>Contact Us</h2>
+        <img src="https://via.placeholder.com/600x300?text=Contact+Us" alt="Contact">
+        <p>Got questions or feedback? Reach out to us via our contact form or call us. We're here to help!</p>
+        <a href="contact.html" class="cta-button">Contact Us</a>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Burger King. All rights reserved. <a href="privacy.html">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>

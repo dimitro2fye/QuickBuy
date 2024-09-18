@@ -1,0 +1,22 @@
+body {
+    font: normal 18px ;
+    color: rgb(0, 0, 0);
+}
+
+.backgr {
+
+    background: white url("file:///C:/Users/Dumitru/Desktop/LUCRARI%20HTML/New%20folder/poza%2052.jpg") no-repeat center center;
+}
+table {
+
+    background: white;
+}
+.header {
+    width: :100%;
+    height: 300px;
+}
+
+.backgr2 {
+
+    background: white url("https://wallup.net/wp-content/uploads/2017/03/28/408531-landscape-grass-field.jpg"); no-repeat center center;
+}

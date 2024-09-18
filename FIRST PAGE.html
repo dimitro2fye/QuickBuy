@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickBuy.com</title>
+    <style>
+        /* General styling */
+        body {
+            background: linear-gradient(to right, #007bff 50%, #28a745 50%);
+            overflow: hidden;
+            position: relative;
+            font-family: Arial, sans-serif;
+        }
+
+        .dot {
+            position: absolute;
+            border-radius: 50%;
+            background: white;
+            opacity: 0.6;
+        }
+
+        .dot:nth-child(1) { top: 10%; left: 10%; width: 15px; height: 15px; }
+        .dot:nth-child(2) { top: 25%; left: 40%; width: 20px; height: 20px; }
+        .dot:nth-child(3) { top: 60%; left: 70%; width: 10px; height: 10px; }
+        .dot:nth-child(4) { top: 80%; left: 30%; width: 25px; height: 25px; }
+        .dot:nth-child(5) { top: 50%; left: 85%; width: 18px; height: 18px; }
+
+        /* Styling for the buttons */
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .button-container a {
+            text-decoration: none;
+            padding: 15px 30px;
+            margin: 0 10px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 18px;
+            border-radius: 5px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .button-container a:hover {
+            background-color: #45a049;
+        }
+
+        /* About us styling */
+        .about-us {
+            font-size: 20px;
+            color: #333;
+            background-color: #f9f9f9;
+            border-left: 5px solid #4CAF50;
+            padding: 20px;
+            margin: 20px 0;
+            line-height: 1.6;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        .about-us-title {
+            font-size: 26px;
+            font-weight: bold;
+            color: #4CAF50;
+        }
+
+        /* Title styling */
+        .page-title {
+            text-align: center;
+            color: black;
+            font-size: 80px;
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+
+        /* Styling for the login/sign-up buttons */
+        .auth-buttons {
+            position: fixed;
+            top: 100px;
+            right: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .auth-buttons a {
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+            width: 120px;
+        }
+
+        .auth-buttons a:hover {
+            background-color: #0056b3;
+        }
+
+        /* Language selection styling */
+        .language-container {
+            position: fixed;
+            bottom: 20px;
+            right: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .language-button {
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+            width: 150px;
+        }
+
+        .language-button:hover {
+            background-color: #0056b3;
+        }
+
+        .language-dropdown {
+            display: none;
+            position: absolute;
+            bottom: 40px;
+            right: 0;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 150px;
+            z-index: 1000;
+        }
+
+        .language-dropdown a {
+            display: block;
+            padding: 10px;
+            color: #333;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .language-dropdown a:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Download buttons styling */
+        .download-buttons {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .download-buttons img {
+            width: 150px;
+            height: auto;
+        }
+
+        /* Made By text styling */
+        .made-by {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 14px;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <!-- Title at the top of the page -->
+    <div style="text-align: center;">
+        <h1 class="page-title">QuickBuy</h1>
+    </div>
+
+    <!-- Image -->
+    <table border="10" width="820" style="margin: 0 auto;">
+        <tr>
+            <td colspan="2">
+                <img src="file:///C:/Users/Dumitru/Desktop/LUCRARI%20HTML/New%20folder/pzoa%205.png" width="800" height="300" alt="IMAGINE"/>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Horizontal buttons below the image -->
+    <div class="button-container">
+        <a href="Produse.html">Produse</a>
+        <a href="Servicii.html">Servicii</a>
+        <a href="Contacte.html">Contacte</a>
+    </div>
+
+    <!-- About Us Section -->
+    <div class="about-us">
+        <p class="about-us-title">About Us</p>
+        <p>
+            QuickBuy is a fast and convenient online platform that lets you order food from your favorite local restaurants and cafes with just a few clicks. Whether you're craving a quick snack or a full meal, QuickBuy makes it easy to browse menus, customize orders, and have your food delivered right to your door.
+        </p>
+    </div>
+
+    <!-- Authentication buttons on the right -->
+    <div class="auth-buttons">
+        <a href="Login.html">Login</a>
+        <a href="SignUp.html">Sign Up</a>
+    </div>
+
+    <!-- Language selection -->
+    <div class="language-container">
+        <button class="language-button" onclick="toggleLanguageDropdown()">Languages</button>
+        <div id="languageDropdown" class="language-dropdown">
+            <a href="#" onclick="changeLanguage('en'); return false;">English</a>
+            <a href="#" onclick="changeLanguage('ru'); return false;">Russian</a>
+            <a href="#" onclick="changeLanguage('ro'); return false;">Romanian</a>
+            <a href="#" onclick="changeLanguage('de'); return false;">German</a>
+        </div>
+    </div>
+
+    <!-- Download buttons on the left-bottom -->
+    <div class="download-buttons">
+        <a href="https://play.google.com/store/apps" target="_blank">
+            <img src="https://via.placeholder.com/150x50?text=Download+on+Google+Play" alt="Download on Google Play">
+        </a>
+        <a href="https://apps.apple.com" target="_blank">
+            <img src="https://via.placeholder.com/150x50?text=Download+on+App+Store" alt="Download on the App Store">
+        </a>
+    </div>
+
+    <!-- Made By text -->
+    <div class="made-by">
+        Made By: Dumitru Dragomeretchi
+    </div>
+
+    <script>
+        function toggleLanguageDropdown() {
+            var dropdown = document.getElementById('languageDropdown');
+            dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+        }
+
+        function changeLanguage(language) {
+            // Implement actual language change logic here.
+            alert('Language changed to: ' + language);
+            // For demonstration purposes, it just shows an alert. Implement the actual language change here.
